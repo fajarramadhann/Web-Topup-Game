@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+    rel="stylesheet">
+
+  <title>Hexashop Ecommerce HTML CSS Template</title>
+
+
+  <!-- Additional CSS Files -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+  <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+  <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <!--
+
+TemplateMo 571 Hexashop
+
+https://templatemo.com/tm-571-hexashop
+
+-->
+
+<style type="text/css">
+  .col-bjconfirm {
+      flex: 0 0 auto;
+      width: 50%;
+      font-size: 14px;
+      text-align: right;
+  }
+  .btn-ordernow:hover{
+      color: #fff;
+      background-color: #535a62;
+      border-color: #4b4e51;
+  }
+  .col-bjconfirm2 {
+      flex: 0 0 auto;
+      width: 50%;
+      font-size: 14px;
+      text-align: left;
+  }
+  .col-bjconfirm3 {
+      flex: 0 0 auto;
+      width: 100%;
+      font-size: 11px;
+      text-align: center;
+  }
+  .ap-otp-input {
+      border: 3px solid #ebebeb;
+      border-radius: 18px;
+      width: 35px;
+      height: 53px;
+      margin: 4px;
+      text-align: center;
+      font-size: 35px;
+  }
+
+  .child-box:hover {
+      border: 1px solid #B19973;
+  }
+
+
+  .bangjeff-dicek {
+          font-size: 9px;
+          font-style: italic;
+          color: #B19973;
+      }
+
+  .ap-otp-input:focus {
+      outline: none !important;
+      border: 3px solid #B19973;
+      transition: 0.12s ease-in;
+  }
+  .list-group-item {
+      user-select: none;
+  }
+  .list-group-item:last-child {
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+  }
+
+  .list-group input[type="radio"] {
+      display: none;
+  }
+  .list-group1 input[type="radio"] {
+      display: none;
+  }
+  .list-group input[type="radio"]+.list-group-item {
+      text-align: center;
+      cursor: pointer;
+      background-color: #282c30;
+      color: #dcddeb;
+      border-color: transparent;
+      border: 2px solid #282c30;
+      font-size: 12px;
+  }
+
+  .nominal-price {
+      font-size: 11px;
+      text-align: left;
+  }
+
+  .name-prod {
+      /* font-weight:600; */
+      color: #ffffff;
+      /* padding: 0%; */
+      text-align: left;
+  }
+
+  .list-group input[type="radio"]+label>.row>.col>.row>.nominal-price {
+      color: #dee2e6;
+      /* font-style: bold; */
+      /* font-family: 'bangjeff-comic';
+      font-style: italic; */
+  }
+  .list-group input[type="radio"]:checked+label>.row>.col>.row>.nominal-price {
+      color: #B19973;
+      /* font-family: 'bangjeff-comic'; */
+      /* font-style: bold; */
+      /* font-style: italic; */
+  }
+
+  .list-group input[type="radio"]+.list-group-item:before {
+      /* content: "\2713"; */
+      color: transparent;
+      font-weight: bold;
+      /* margin-right: 1em; */
+
+  }
+
+  .list-group input[type="radio"]+.list-group-item:hover {
+      cursor: pointer;
+      background-color: #adadad43;
+      color: #ffffff;
+      border-color: #adadad43;
+
+      font-size: 12px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+  }
+  .list-group input[type="radio"]:checked+.list-group-item:before {
+      color: inherit;
+  }
+  .list-group input[type="radio"]:checked+.list-group-item:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 28px;
+      height: 26px;
+      content: "";
+      background: url(/assets/img/verified-ourastore.png) top/cover;
+      text-align: center;
+  }
+  .list-group input[type="radio"]:checked+.list-group-item {
+      color: #ef222243;
+      font-size: 12px;
+      border: 2px solid #c9c9c993;
+      box-shadow: 0 0 2.22222vw #ababab, inset 0 2.40741vw 8.05556vw #adadad43, inset 0 -8.24074vw 11.48148vw #adadad43;
+      overflow: hidden;
+  }
+  .list-group1 input[type="radio"]:checked+.list-group-item:before {
+      color: inherit;
+  }
+  .list-group1 input[type="radio"]:checked+.list-group-item {
+      background-color: #ffffff;
+      color: #B19973;
+      font-size: 12px;
+      display: block;
+      -webkit-filter: grayscale(0%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(0%);
+  }
+  .list-group1 input[type="radio"]+.list-group-item {
+      text-align: center;
+      cursor: pointer;
+      /* background-color: #e8e8e8;
+      color: #fe6c17; */
+      border-color: transparent;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.19);
+      font-size: 12px;
+      border-radius: 3px;
+      background: rgb(208, 208, 208);
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+  }
+  .list-group1 input[type="radio"]+.list-group-item:hover {
+      cursor: pointer;
+      background-color: #ffffff;
+      color: #fe6c17;
+      border-color: #ffffff;
+      box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19);
+      font-size: 12px;
+      border-radius: 3px;
+  }
+  .list-group1 input[type="radio"]:checked+.list-group-item:before {
+      color: inherit;
+  }
+
+      /* .list-group input[type="radio"]+.list-group-item:hover {
+          cursor: pointer;
+          background-color: rgba(255, 255, 230, 0.5);
+          color: rgb(102, 102, 102);
+          border-color: #B19973;
+
+          font-size: 12px;
+      }
+      .list-group input[type="radio"]:checked+.list-group-item {
+          background-color: #B19973;
+          color: #FFF;
+          font-size: 12px;
+      } */
+
+      #payment{
+          color:#db2525;
+      }
+
+      .list-group1 input[type="radio"]:checked+.list-group-item:after {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 28px;
+          height: 26px;
+          content: "";
+          background: url(/assets/img/verified-ourastore.png) top/cover;
+          filter:drop-shadow(2px 4px 6px black);
+          text-align: center;
+      }
+      .list-group1 input[type="radio"]:checked+.list-group-item:before {
+          color: inherit;
+      }
+      .list-group1 input[type="radio"]:checked+.list-group-item:before {
+          color: inherit;
+      }
+      .list-group1 input[type="radio"]:checked+.list-group-item {
+          background-color: #ffffff;
+          color: #B19973;
+          font-size: 12px;
+          display: block;
+          -webkit-filter: grayscale(0%);
+          /* Safari 6.0 - 9.0 */
+          filter: grayscale(0%);
+      }
+      .list-group1 input[type="radio"]+.list-group-item {
+          text-align: center;
+          cursor: pointer;
+          /* background-color: #e8e8e8;
+          color: #0d6efd; */
+          border-color: transparent;
+          box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2), 0 5px 10px 0 rgba(0,0,0,0.19);
+          font-size: 12px;
+          border-radius: 3px;
+          background: rgb(208, 208, 208);
+          -webkit-filter: grayscale(100%);
+          /* Safari 6.0 - 9.0 */
+          filter: grayscale(100%);
+      }
+      .list-group1 input[type="radio"]+.list-group-item:hover {
+          cursor: pointer;
+          background-color: #ffffff;
+          color: #B19973;
+          border-color: #ffffff;
+          box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19);
+          font-size: 12px;
+          border-radius: 3px;
+      }
+      .list-group1 input[type="radio"]:checked+.list-group-item:before {
+          color: inherit;
+      }
+
+      .button-action-payment .info-top img {
+          width: 100%;
+          max-height: 20px;
+          -o-object-fit: contain;
+          object-fit: contain;
+          vertical-align: middle;
+
+      }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="preloader">
+    <div class="jumper">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+              <img src="assets/images/eg-topup-white.png" width="90">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#men"></a></li>
+              <li class="submenu">
+                <a href="javascript:;">Games</a>
+                <ul>
+                  <li><a href="about.html">Legenda Seluler</a></li>
+                  <li><a href="freefire.html">Api Gratis</a></li>
+                  <li><a href="single-product.html">Dampak Genshin</a></li>
+                  <li><a href="contact.html">Medan Pertempuran Pemain Tidak Diketahui</a></li>
+                </ul>
+              </li>
+              <li class="scroll-to-section"><a href="#women">Promo</a></li>
+
+              <li class="submenu">
+                <a href="javascript:;">App Premium</a>
+                <ul>
+                  <li><a href="#">Netlfix</a></li>
+                  <li><a href="#">Spotify</a></li>
+                  <li><a href="#">Youtube Premium</a></li>
+                  <li><a rel="nofollow" href="https://templatemo.com/page/4" target="_blank">Template Page 4</a></li>
+                </ul>
+              </li>
+              <li class="scroll-to-section"><a href="#explore">Contact Us</a></li>
+            </ul>
+            <a class='menu-trigger'>
+              <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mt-2 mb-2">
+        <div class="card-bg-dark shadow" id="card-bg">
+          <div class="card-body" style="margin-top: 6rem;">
+            <img src="assets/images/ff.jpg" class="shadow rounded bg-dark mx-auto mb-2 d-lg-block d-none" width="150"
+              alt="" id="ff-logo">
+            <div class="row">
+              <div class="col">
+                <h4 class="text-white text-center">Free Fire</h4>
+                <div class="strip-primary"></div><br>
+                <span class="text-white mt-3 mb-3">Proses Otomatis</span>
+                <img src="assets/images/ff.jpg" alt=""
+                  class="shadow rounded bg-dark float-start mt-2 me-2 mb-0 d-lg-none d-block" width="45">
+                <p>Top Up Diamond Mobile Legends<br><span style="font-weight: bolder;">Proses Fast 3 Detik Setelah Pembayaran</span><br></p>
+                <ol>
+                  <li>Masukkan&nbsp;<span style="font-weight: bolder;">ID (SERVER)</span></li>
+                  <li>Pilih&nbsp;<span style="font-weight: bolder;">Nominal&nbsp;</span>Diamond</li>
+                  <li>Pilih&nbsp;<span style="font-weight: bolder;">Metode Pembayaran</span></li>
+                  <li>Tulis&nbsp;<span style="font-weight: bolder;">nomor WhatsApp</span>&nbsp;yg benar!</li>
+                  <li>Klik&nbsp;<span style="font-weight: bolder;">Beli&nbsp;</span>&amp; lakukan Pembayaran</li>
+                  <li>Diamond akan masuk otomatis ke akun anda</li>
+                </ol>
+                <p style="margin-bottom: 10px; text-align: center;">
+                  <font size="3" color="#ff9c00"><span style="font-weight: bolder;">Top Up Buka 24 Jam</span></font>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 mt-2 mb-2">
+        <div class="row">
+          <div class="col">
+            <div class="card bg-shadow-dark" id="card-userdata">
+              <div class="card-header">
+                <h5 class="card-title">Lengkapi Data</h5>
+              </div>
+              <div class="card-body">
+                <div id="user-data">
+                  <div class="row row-cols row-cols-md">
+                    <div class="col-lg-6">
+                      <div class="form-group mb-3">
+                        <label for="userId">User ID</label>
+                        <input class="form-control" placeholder="Masukkan User ID" type="number" name="userId" required>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-group mb-3">
+                      <label for="serverid">Server ID</label>
+                      <input class="form-control" placeholder="Masukkan Server ID" type="number" name="serverid" id="serverid" required="">
+                      </div>
+                      </div>
+                  </div>
+                </div>
+                <button class="btn btn-success btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#petunjukModal">Petunjuk</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col">
+          <div class="card bg-dark shadow" style="width: 50rem;">
+          <div class="card-header">
+          <h5 class="card-title text-white">Pilih Nominal</h5>
+          </div>
+          <div class="card-body">
+          <div id="tempatNominal">
+          <div class="row row-cols-2">
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-666" value="666" data-type="diamond">
+          <label for="nominal-666" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">Weekly Diamond Pass (Misi Top Up +100)</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 26.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-635" value="635" data-type="diamond">
+          <label for="nominal-635" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">Twilight Pass</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 135.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-1043" value="1043" data-type="diamond">
+          <label for="nominal-1043" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">12 (11+1) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 3.800</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-1044" value="1044" data-type="diamond">
+          <label for="nominal-1044" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">19 (17+2) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 5.800</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-599" value="599" data-type="diamond">
+          <label for="nominal-599" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">36 (33+3) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 11.500</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-878" value="878" data-type="diamond">
+          <label for="nominal-878" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">44 (40+4) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 12.500</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-600" value="600" data-type="diamond">
+          <label for="nominal-600" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">59 (53+6) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 16.500</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-877" value="877" data-type="diamond">
+          <label for="nominal-877" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">74 (67+7) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 20.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-601" value="601" data-type="diamond">
+          <label for="nominal-601" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">86 (78+8) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 20.500</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-602" value="602" data-type="diamond">
+          <label for="nominal-602" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">172 (156+16) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 41.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-1901" value="1901" data-type="diamond">
+          <label for="nominal-1901" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">223 (203+20) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 56.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-603" value="603" data-type="diamond">
+          <label for="nominal-603" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">257 (234+23) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 61.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-1902" value="1902" data-type="diamond">
+          <label for="nominal-1902" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">336 (303+33) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 81.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-604" value="604" data-type="diamond">
+          <label for="nominal-604" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">344 (312+32) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 82.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-605" value="605" data-type="diamond">
+          <label for="nominal-605" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">429 (390+39) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 105.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-606" value="606" data-type="diamond">
+          <label for="nominal-606" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">514 (468+46) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 125.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-1903" value="1903" data-type="diamond">
+          <label for="nominal-1903" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">570 (504+66) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 140.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-607" value="607" data-type="diamond">
+          <label for="nominal-607" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">600 (546+54) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 145.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-608" value="608" data-type="diamond">
+          <label for="nominal-608" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">706 (625+81) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 165.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-1079" value="1079" data-type="diamond">
+          <label for="nominal-1079" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">792 (703+89) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 185.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-609" value="609" data-type="diamond">
+          <label for="nominal-609" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">878 (781+97) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 210.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-610" value="610" data-type="diamond">
+          <label for="nominal-610" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">963 (859+104) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 230.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-611" value="611" data-type="diamond">
+          <label for="nominal-611" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">1050 (937+113) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 250.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-1904" value="1904" data-type="diamond">
+          <label for="nominal-1904" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">1163 (1007+156) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 280.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-612" value="612" data-type="diamond">
+          <label for="nominal-612" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">1220 (1093+127) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 295.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-613" value="613" data-type="diamond">
+          <label for="nominal-613" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">1412 (1250+162) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 335.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-614" value="614" data-type="diamond">
+          <label for="nominal-614" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">1669 (1484+185) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 400.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-615" value="615" data-type="diamond">
+          <label for="nominal-615" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">2195 (1860+335) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 490.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-1905" value="1905" data-type="diamond">
+          <label for="nominal-1905" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">2398 (2015+383) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 550.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-616" value="616" data-type="diamond">
+          <label for="nominal-616" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">2539 (2172+367) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 575.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-617" value="617" data-type="diamond">
+          <label for="nominal-617" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">2901 (2485+416) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 660.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-618" value="618" data-type="diamond">
+          <label for="nominal-618" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">3688 (3099+589) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 820.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-619" value="619" data-type="diamond">
+          <label for="nominal-619" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">4394 (3724+670) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 980.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-620" value="620" data-type="diamond">
+          <label for="nominal-620" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">5532 (4649+883) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 1.230.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-1906" value="1906" data-type="diamond">
+          <label for="nominal-1906" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">6042 (5035+1007) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 1.350.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-621" value="621" data-type="diamond">
+          <label for="nominal-621" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">6238 (5274+964) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 1.400.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-622" value="622" data-type="diamond">
+          <label for="nominal-622" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">7727 (6509+1218) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 1.720.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-623" value="623" data-type="diamond">
+          <label for="nominal-623" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">9288 (7740+1548) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 2.050.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-636" value="636" data-type="diamond">
+          <label for="nominal-636" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">12976 (10839+2137) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 2.860.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-624" value="624" data-type="diamond">
+          <label for="nominal-624" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">14820 (12389+2431) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 3.300.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-625" value="625" data-type="diamond">
+          <label for="nominal-625" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">18576 (15480+3096) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 4.110.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          <div class="col-lg-4 mt-3">
+          <div class="list-group shadow h-100">
+          <input type="radio" name="inlineRadioOptions" id="nominal-626" value="626" data-type="diamond">
+          <label for="nominal-626" class="list-group-item h-100">
+          <div class="row">
+          <div class="col">
+          <div class="row">
+          <div class="col name-prod">27864 (23220+4644) Diamonds</div>
+          </div>
+          <div class="row">
+          <div class="col nominal-price">Rp 6.190.000</div>
+          </div>
+          </div>
+          </div>
+          </label>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ***** Footer Start ***** -->
+  <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="first-item">
+                        <div class="logo">
+                            <img class="logo-footer" src="assets/images/eg-topup-white.png" alt="hexashop ecommerce templatemo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h4>App Premium</h4>
+                    <ul>
+                        <li><a href="#">Netflix Premium</a></li>
+                        <li><a href="#">Youtube Premium</a></li>
+                        <li><a href="#">Canva Pro</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Promo &amp; News</h4>
+                    <ul>
+                        <li><a href="#">Diskon 10.10</a></li>
+                        <li><a href="#">Cashback 10%</a></li>
+                        <li><a href="#">Bonus Coin & Diamond</a></li>
+                        <li><a href="#">Article</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h4>Help &amp; Information</h4>
+                    <ul>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Check Invoice</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-12">
+                    <div class="under-footer">
+                        <p>Copyright © 2023 Jarss88 Co. Ltd. All Rights Reserved. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/accordions.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/imgfix.min.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/isotope.js"></script>
+
+  <!-- Global Init -->
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+
+    $(function () {
+      var selectedClass = "";
+      $("p").click(function () {
+        selectedClass = $(this).attr("data-rel");
+        $("#portfolio").fadeTo(50, 0.1);
+        $("#portfolio div").not("." + selectedClass).fadeOut();
+        setTimeout(function () {
+          $("." + selectedClass).fadeIn();
+          $("#portfolio").fadeTo(50, 1);
+        }, 500);
+
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
